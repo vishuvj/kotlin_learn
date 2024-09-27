@@ -1,3 +1,5 @@
+package main
+
 fun main() {
     oddEven(13)
     println(sum(2, 4))

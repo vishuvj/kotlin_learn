@@ -1,3 +1,5 @@
+package main
+
 import kotlin.reflect.KFunction2
 
 fun main() {

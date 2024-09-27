@@ -1,3 +1,5 @@
+package main
+
 fun main() {
     val _4Loops = _4Loops()
 //    _4Loops.whileLoops()

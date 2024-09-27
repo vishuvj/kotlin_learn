@@ -1,4 +1,4 @@
-package org.example
+package org.example.main
 
 //class LearnObject {
 //}
@@ -6,21 +6,21 @@ package org.example
 // object Declaration
 /**
 fun main(){
-    SharingWidget.incrementTwitterLikes()
-    SharingWidget.incrementTwitterLikes()
-    SharingWidget.incrementTwitterLikes()
-    SharingWidget.incrementFBLikes()
-    SharingWidget.display()
+SharingWidget.incrementTwitterLikes()
+SharingWidget.incrementTwitterLikes()
+SharingWidget.incrementTwitterLikes()
+SharingWidget.incrementFBLikes()
+SharingWidget.display()
 }
 object SharingWidget{
-   private var twitterLikes=0
-    private var fbLikes=0
+private var twitterLikes=0
+private var fbLikes=0
 
-    fun incrementTwitterLikes()= twitterLikes++
-    fun incrementFBLikes()= fbLikes++
-    fun display()=println("Facebook: $fbLikes , Twitter: $twitterLikes")
+fun incrementTwitterLikes()= twitterLikes++
+fun incrementFBLikes()= fbLikes++
+fun display()=println("Facebook: $fbLikes , Twitter: $twitterLikes")
 }
-        **/
+ **/
 
 // object expression
 //fun main(){
@@ -46,8 +46,8 @@ object SharingWidget{
 //    fun clone()
 //}
 
-fun main(){
-    var obj=object :Person("Vishal Jadon"){
+fun main() {
+    var obj = object : Person("Vishal Jadon") {
         override fun fullName() {
             super.fullName()
             println("Anonymous : $name")
@@ -55,6 +55,7 @@ fun main(){
     }
     obj.fullName()
 }
-open class Person(val name:String){
-    open fun fullName()= println("Full Name: $name")
+
+open class Person(val name: String) {
+    open fun fullName() = println("Full Name: $name")
 }

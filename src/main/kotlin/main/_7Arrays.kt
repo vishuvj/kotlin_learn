@@ -1,3 +1,5 @@
+package main
+
 /* Simple object that store values of same type
 *and fixed size*/
 fun main() {
